@@ -1,3 +1,4 @@
+# This is part of Day-3
 terraform {
   backend "s3" {
     bucket         = "atul-terraform-state-2026"
