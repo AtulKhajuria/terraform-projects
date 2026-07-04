@@ -1,4 +1,4 @@
-output "vpc_cidr" {
+output "vpc_id" {
   value = aws_vpc.main.id
 }
 output "public_subnet_1_cidr" {

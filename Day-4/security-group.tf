@@ -1,7 +1,7 @@
 resource "aws_security_group" "allow_traffic" {
   name        = "allow_traffic"
   description = "Allow inbound traffic and all outbound traffic"
-  vpc_id      = aws_vpc.main.id
+  vpc_id      = module.network.vpc_id
 
   tags = {
     Name = "allow_traffic"
