@@ -109,3 +109,29 @@ Not commited separate Day-3, it is in the Day-2 code only
 - Understood how Terraform uses the state file as the mapping between configuration and AWS resources.
 
 ---
+# Day 4 - EC2 Provisioning
+
+## Objective
+Provision an EC2 instance using Terraform and automatically install Nginx using a user data script.
+
+## Resources Created
+- Security Group
+- Key Pair
+- Ubuntu AMI Data Source
+- EC2 Instance
+
+## Terraform Concepts Learned
+- Data Sources
+- `aws_instance`
+- `aws_key_pair`
+- `user_data`
+- `file()` function
+
+## Key Takeaways
+- Provisioned an EC2 instance using Terraform.
+- Fetched the latest Ubuntu AMI dynamically using a data source.
+- Configured Security Group and Key Pair for secure access.
+- Automated Nginx installation using `user_data.sh`.
+- Verified the web server by accessing the EC2 Public IP.
+
+```
