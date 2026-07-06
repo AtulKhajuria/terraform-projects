@@ -8,4 +8,5 @@ resource "aws_instance" "web_server" {
   tags = {
     Name = "Terraform-Web-Server"
   }
+  user_data = file("${path.module}/user_data.sh")
 }
