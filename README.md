@@ -135,3 +135,26 @@ Provision an EC2 instance using Terraform and automatically install Nginx using 
 - Verified the web server by accessing the EC2 Public IP.
 
 ```
+# Day 5 - Application Load Balancer (ALB)
+
+## Objective
+Deploy an Application Load Balancer (ALB) to distribute traffic to the EC2 instance.
+
+## Resources Created
+- Application Load Balancer (ALB)
+- Target Group
+- Target Group Attachment
+- HTTP Listener
+
+## Terraform Concepts Learned
+- `aws_lb`
+- `aws_lb_target_group`
+- `aws_lb_target_group_attachment`
+- `aws_lb_listener`
+
+## Key Takeaways
+- Created an internet-facing Application Load Balancer.
+- Registered the EC2 instance with a Target Group.
+- Configured an HTTP Listener to forward requests to the Target Group.
+- Accessed the application using the ALB DNS name instead of the EC2 Public IP.
+```
