@@ -4,7 +4,7 @@ resource "aws_launch_template" "web_lt" {
   instance_type = var.instance_type
   key_name = aws_key_pair.terraform_key.key_name
   vpc_security_group_ids = [aws_security_group.allow_traffic.id]
-  user_data = base64encode(file("${path.path.module}/user_data.sh"))
+  user_data = base64encode(file("${path.module}/user_data.sh"))
   tag_specifications {
     resource_type = "instance"
     tags = {
