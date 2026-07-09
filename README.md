@@ -158,4 +158,25 @@ Deploy an Application Load Balancer (ALB) to distribute traffic to the EC2 insta
 - Configured an HTTP Listener to forward requests to the Target Group.
 - Accessed the application using the ALB DNS name instead of the EC2 Public IP.
 
+---
+# Day 6 - Auto Scaling Group (ASG)
+
+## Objective
+Provision EC2 instances automatically using an Auto Scaling Group and Launch Template.
+
+## Resources Created
+- Launch Template
+- Auto Scaling Group (ASG)
+
+## Terraform Concepts Learned
+- `aws_launch_template`
+- `aws_autoscaling_group`
+- `base64encode()`
+
+## Key Takeaways
+- Created a Launch Template as a blueprint for EC2 instances.
+- Configured an Auto Scaling Group with minimum, maximum, and desired capacity.
+- Automatically registered EC2 instances with the Target Group.
+- Verified application access through the ALB DNS.
+- Understood the importance of internet connectivity for `user_data` execution and why public IPs (or a NAT Gateway in production) are required for package installation.
 ```
