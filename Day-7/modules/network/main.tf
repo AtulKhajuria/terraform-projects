@@ -13,10 +13,12 @@ resource "aws_internet_gateway" "igw" {
 resource "aws_subnet" "public_subnet_1" {
     vpc_id = aws_vpc.main.id
   cidr_block = var.public_subnet_1_cidr
+  availability_zone = "ap-south-1a"
 }
 resource "aws_subnet" "public_subnet_2" {
     vpc_id = aws_vpc.main.id
   cidr_block = var.public_subnet_2_cidr
+  availability_zone = "ap-south-1b"
 }
 resource "aws_route_table" "public_rt" {
     vpc_id = aws_vpc.main.id
