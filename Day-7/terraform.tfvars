@@ -6,3 +6,7 @@ public_subnet_1_cidr = "10.0.1.0/24"
 public_subnet_2_cidr = "10.0.2.0/24"
 my_ip = "65.2.75.109/32"
 instance_type = "t3.micro"
+availability_zones = [
+  "ap-south-1a",
+  "ap-south-1b"
+]

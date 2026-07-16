@@ -7,8 +7,8 @@ resource "aws_autoscaling_group" "web_asg" {
   desired_capacity          = 2
   
   vpc_zone_identifier = [
-    module.network.public_subnet_1_cidr,
-    module.network.public_subnet_2_cidr
+    module.network.public_subnet_1_id,
+    module.network.public_subnet_2_id
   ]
 
   target_group_arns = [

@@ -17,3 +17,7 @@ variable "instance_type" {
   type = string
   default = "t3.micro"
 }
+variable "availability_zones" {
+  description = "List of Availability Zones"
+  type        = list(string)
+}
